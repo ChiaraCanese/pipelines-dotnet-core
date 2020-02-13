@@ -26,5 +26,5 @@ steps:
   condition: succeededOrFailed()
   inputs:
     testResultsFormat: 'VSTest'
-    testResultsFiles: '**/*.trx'
+    testResultsFiles: 'https://github.com/ChiaraCanese/pipelines-dotnet-core/blob/master/log.trx'
 
