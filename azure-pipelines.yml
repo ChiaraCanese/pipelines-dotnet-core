@@ -21,10 +21,3 @@ steps:
     projects: '**/*.csproj'
     arguments: '--configuration Release' # Update this to match your need
 
-- script: dotnet test <test-project> --logger trx
-- task: PublishTestResults@2
-  condition: succeededOrFailed()
-  inputs:
-    testResultsFormat: 'VSTest'
-    testResultsFiles: 'https://github.com/ChiaraCanese/pipelines-dotnet-core/blob/master/log.trx'
-
